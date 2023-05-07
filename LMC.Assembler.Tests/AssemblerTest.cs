@@ -18,10 +18,10 @@ loop    OUT
 one     DAT 1
 count   DAT 0";
 
-        var excpected = new int[] {901, 902, 308, 207, 308, 801, 0, 1, 0};
+        var expected = new int[] {901, 902, 308, 207, 308, 801, 0, 1, 0};
         var actual = LMCAssembler.Assemble(code);
 
-        Assert.Equal(excpected, actual);
+        Assert.Equal(expected, actual);
     }
 
     [Fact]
@@ -45,14 +45,14 @@ number  DAT 0
 one     DAT 1
 ten     DAT 10";
 
-        var excpected = new int[] { 512, 111, 902, 
+        var expected = new int[] { 512, 111, 902, 
                                     312, 511, 113, 
                                     311, 514, 211, 
                                     800, 0, 1, 
                                     0, 1, 10 };
         var actual = LMCAssembler.Assemble(code);
 
-        Assert.Equal(excpected, actual);
+        Assert.Equal(expected, actual);
     }
 
     [Fact]
@@ -102,7 +102,7 @@ one       DAT 1
 iteration DAT 0
 num       DAT 0";
 
-        var excpected = new int[] { 901, 336, 733, 238,
+        var expected = new int[] { 901, 336, 733, 238,
                                     339, 337, 536, 340,
                                     539, 730, 238, 730,
                                     536, 140, 336, 537,
@@ -115,6 +115,6 @@ num       DAT 0";
                                     000 };
         var actual = LMCAssembler.Assemble(code);
 
-        Assert.Equal(excpected, actual);
+        Assert.Equal(expected, actual);
     }
 }
