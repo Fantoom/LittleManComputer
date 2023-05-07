@@ -1,4 +1,4 @@
-﻿using LMC;
+﻿using LMC.Assembler;
 
 var code = @"        
         INP

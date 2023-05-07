@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace LMC;
+namespace LMC.Assembler;
 
 public class LMCAssembler
 {

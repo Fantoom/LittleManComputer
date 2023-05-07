@@ -1,4 +1,4 @@
-﻿namespace LMC;
+﻿namespace LMC.Assembler;
 
 public enum OpCodes 
 {
