@@ -1,4 +1,6 @@
-﻿namespace LMC;
+﻿using System.Globalization;
+
+namespace LMC;
 
 public class LMCAssembler
 {
@@ -76,6 +78,7 @@ public class LMCAssembler
     }
     private static int Concat(int a, int b)
     {
-        return Convert.ToInt32($"{a}{b:00}");
+        FormattableString formattableString = $"{a}{b:00}";
+        return Convert.ToInt32(formattableString.ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
     }
 }
