@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LMC\LMC.Assembler.csproj" />
+    <ProjectReference Include="..\LMC.Assembler\LMC.Assembler.csproj" />
   </ItemGroup>
 
 </Project>
