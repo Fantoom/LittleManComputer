@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMC.Assembler.Tests", "LMC.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMC.Assembler", "LMC.Assembler\LMC.Assembler.csproj", "{EF6307BB-1789-4729-A095-1E6843B21ACE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMC.Simulator", "LMC.Simulator\LMC.Simulator.csproj", "{17EF4801-5D34-456D-B3F6-FE01252004AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMC.Simulator", "LMC.Simulator\LMC.Simulator.csproj", "{17EF4801-5D34-456D-B3F6-FE01252004AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMC.Simulator.Tests", "LMC.Simulator.Tests\LMC.Simulator.Tests.csproj", "{57F81864-CAA6-4BB4-B050-AAC767B08883}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{17EF4801-5D34-456D-B3F6-FE01252004AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17EF4801-5D34-456D-B3F6-FE01252004AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17EF4801-5D34-456D-B3F6-FE01252004AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F81864-CAA6-4BB4-B050-AAC767B08883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F81864-CAA6-4BB4-B050-AAC767B08883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F81864-CAA6-4BB4-B050-AAC767B08883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F81864-CAA6-4BB4-B050-AAC767B08883}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
