@@ -38,8 +38,10 @@ public class LMCAssembler
                 else
                     return value;
             }
-            else
+            else if ((int)x.OpCode > 0)
                 return (int)x.OpCode;
+            else
+                return 0;
         }).ToArray();
     }
 

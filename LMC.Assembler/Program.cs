@@ -1,17 +1,17 @@
 ﻿using LMC.Assembler;
 
 var code = @"        
-        INP
-loop    OUT
-        STA count
-        SUB one
-        STA count
-        BRP loop
-        HLT
-		
-one     DAT 1
-count   DAT 0		
+      LDA a
+      STA num1      
+      LDA b     
+      ADD num1
+      OUT
+      HLT
+	  
+num1  DAT
+a DAT 5
+b DAT 10	
 ";
 
 var assemblyCode = LMCAssembler.Assemble(code);
-Console.WriteLine(string.Join(" ",  assemblyCode));
+Console.WriteLine(string.Join(", ",  assemblyCode));
