@@ -68,11 +68,13 @@ public class LMCSimulator
             {
                 case OpCodes.ADD:
                     Accumulator += memory[value];
-                    if(Accumulator > 999)
+                    if (Accumulator > 999)
                     {
                         Accumulator %= 1000;
                         OverflowRegister = true;
                     }
+                    else
+                        OverflowRegister = false;
                     break;
                 case OpCodes.SUB:
                     Accumulator -= memory[value];
@@ -81,6 +83,8 @@ public class LMCSimulator
                         Accumulator += 1000;
                         UnderflowRegister = true;
                     }
+                    else
+                        UnderflowRegister = false;
                     break;
                 case OpCodes.STA:
                     memory[value] = Accumulator;
