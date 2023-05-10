@@ -2,7 +2,7 @@
 
 namespace LMC.Assembler;
 
-public class LMCAssembler
+public static class LMCAssembler
 {
     private static Instruction[] ParseInstructions(string assemblyCode)
     {
